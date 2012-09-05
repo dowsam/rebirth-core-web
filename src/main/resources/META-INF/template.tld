@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>rebirth tag library</description>
+	<display-name>rebirth tag</display-name>
+	<tlib-version>3.0</tlib-version>
+	<short-name>template</short-name>
+	<uri>http://www.china-cti.com/tags/template</uri>
+
+	<tag>
+		<description>
+			block tag
+    </description>
+		<name>block</name>
+		<tag-class>cn.com.rebirth.core.web.tags.BlockTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				block name
+        </description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<description>
+			override desc
+    </description>
+		<name>override</name>
+		<tag-class>cn.com.rebirth.core.web.tags.OverrideTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				override name, must be equals block name for override
+        </description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>
+			sub desc
+    </description>
+		<name>sub</name>
+		<tag-class>cn.com.rebirth.core.web.tags.SubTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				sub name, must be equals block name for override
+        </description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>
